@@ -31,7 +31,7 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full mt-8 sticky top-0 z-50">
+    <div className="relative w-full py-5 sticky top-0 z-50 fixed">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
