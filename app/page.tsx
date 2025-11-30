@@ -1,7 +1,7 @@
 import { ExperiencePage } from "@/components/ExperiencePage";
 import { FooterPage } from "@/components/FooterPage";
 import { HeroParallaxPage } from "@/components/HeroParallaxPage";
-import { Logos3 } from "@/components/logos3";
+import { TechStack } from "@/components/TechStack";
 import { NavbarPage } from "@/components/Navbar";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex-1 flex flex-col items-center overflow-x-hidden">
         <HeroParallaxPage />
       </div>
-      <Logos3 />
+      <TechStack />
       <ExperiencePage />
       <FooterPage />
     </div>

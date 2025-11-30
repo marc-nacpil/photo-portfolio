@@ -21,7 +21,7 @@ interface Logos3Props {
   className?: string;
 }
 
-const Logos3 = ({
+const TechStack = ({
   heading = "Trusted by these companies",
   logos = [
     {
@@ -72,7 +72,7 @@ const Logos3 = ({
   const extendedLogos = logos.length < 8 ? [...logos, ...logos] : logos;
 
   return (
-    <section className="pb-36">
+    <section className="pb-36" id="tech">
       <div className="container flex flex-col items-center text-center">
         <h1 className="text-pretty text-2xl font-bold lg:text-5xl">
           {heading}
@@ -111,4 +111,4 @@ const Logos3 = ({
   );
 };
 
-export { Logos3 };
+export { TechStack };

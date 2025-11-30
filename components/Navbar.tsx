@@ -15,8 +15,8 @@ import { useState } from "react";
 export function NavbarPage() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Tech Stack",
+      link: "#tech",
     },
     {
       name: "Experience",
