@@ -24,7 +24,7 @@ interface Footer2Props {
   }[];
 }
 
-const Footer2 = ({
+const FooterPage = ({
   logo = {
     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
     alt: "blocks for shadcn/ui",
@@ -79,7 +79,10 @@ const Footer2 = ({
   ],
 }: Footer2Props) => {
   return (
-    <section className="py-10 w-full bg-zinc-100 dark:bg-zinc-900 px-16">
+    <section
+      className="py-10 w-full bg-zinc-100 dark:bg-zinc-900 px-16"
+      id="footer"
+    >
       <div className="">
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
@@ -129,4 +132,4 @@ const Footer2 = ({
   );
 };
 
-export { Footer2 };
+export { FooterPage };

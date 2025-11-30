@@ -1,17 +1,20 @@
-import { Footer2 } from "@/components/footer2";
-import Hero from "@/components/Hero";
-import { HeroParallaxDemo } from "@/components/HeroParallax2";
-import { NavbarDemo } from "@/components/Navbar";
+import { ExperiencePage } from "@/components/ExperiencePage";
+import { FooterPage } from "@/components/FooterPage";
+import { HeroParallaxPage } from "@/components/HeroParallaxPage";
+import { Logos3 } from "@/components/logos3";
+import { NavbarPage } from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-zinc-50 font-sans dark:bg-black flex flex-col min-h-screen">
-      <NavbarDemo />
+      <NavbarPage />
       <div className="flex-1 flex flex-col items-center overflow-x-hidden">
-        <HeroParallaxDemo />
+        <HeroParallaxPage />
       </div>
-      <Footer2 />
+      <Logos3 />
+      <ExperiencePage />
+      <FooterPage />
     </div>
   );
 }

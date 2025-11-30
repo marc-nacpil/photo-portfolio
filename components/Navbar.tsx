@@ -12,19 +12,19 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 
-export function NavbarDemo() {
+export function NavbarPage() {
   const navItems = [
     {
       name: "Features",
       link: "#features",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Experience",
+      link: "#experience",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Footer",
+      link: "#footer",
     },
   ];
 
