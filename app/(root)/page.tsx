@@ -1,8 +1,8 @@
-import { ExperiencePage } from "@/components/ExperiencePage";
-import { FooterPage } from "@/components/FooterPage";
-import { HeroParallaxPage } from "@/components/HeroParallaxPage";
-import { TechStack } from "@/components/TechStack";
-import { NavbarPage } from "@/components/Navbar";
+import { ExperiencePage } from "@/components/sections/ExperiencePage";
+import { FooterPage } from "@/components/layout/FooterPage";
+import { HeroParallaxPage } from "@/components/sections/HeroParallaxPage";
+import { TechStack } from "@/components/sections/TechStack";
+import { NavbarPage } from "@/components/layout/Navbar";
 import UsersPage from "../users/page";
 
 export default function Home() {
