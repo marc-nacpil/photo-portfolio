@@ -3,7 +3,7 @@ import { FooterPage } from "@/components/FooterPage";
 import { HeroParallaxPage } from "@/components/HeroParallaxPage";
 import { TechStack } from "@/components/TechStack";
 import { NavbarPage } from "@/components/Navbar";
-import Image from "next/image";
+import UsersPage from "../users/page";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       </div>
       <TechStack />
       <ExperiencePage />
+      <UsersPage />
       <FooterPage />
     </div>
   );
