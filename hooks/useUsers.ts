@@ -9,9 +9,11 @@ export function useUsers() {
 
   const fetchUsers = async () => {
     try {
-      const { data, error } = await supabase.from("users").select("*");
+      const response = await fetch("/api/users");
 
-      if (error) throw error;
+      if (!response.ok) throw new Error("Failed to fetch users");
+
+      const data = await response.json();
 
       setUsers(data || []);
       setError(null);
@@ -23,13 +25,8 @@ export function useUsers() {
   };
 
   useEffect(() => {
-    // Fetch immediately on mount
     fetchUsers();
-
-    // Set up interval to fetch every 1 minute (60000ms)
     const interval = setInterval(fetchUsers, 60000);
-
-    // Cleanup interval on unmount
     return () => clearInterval(interval);
   }, []);
 
