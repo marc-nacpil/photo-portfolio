@@ -30,7 +30,7 @@ const ExperiencePage = () => {
 
   return (
     <section
-      className="py-32 px-36 justify-center items-center flex flex-col"
+      className="py-32 px-36 justify-center items-center flex flex-col dark:text-white"
       id="experience"
     >
       <div className="container space-y-10 lg:space-y-20">

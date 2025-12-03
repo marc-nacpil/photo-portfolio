@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import {
   Table,
   TableBody,
@@ -9,7 +8,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useUsers } from "@/hooks/useUsers";
-import { Button } from "@/components/ui/button";
 
 export default function UsersPage() {
   const { users, error, loading, refetch } = useUsers();
@@ -18,7 +16,7 @@ export default function UsersPage() {
   if (error) return <p>Error fetching users: {error}</p>;
 
   return (
-    <section className="flex flex-col px-24 pb-30">
+    <section className="flex flex-col px-24 pb-30 dark:text-white">
       <div className="rounded-md border bg-background">
         <Table>
           <TableHeader>

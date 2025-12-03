@@ -74,7 +74,7 @@ const TechStack = ({
   return (
     <section className="pb-36" id="tech">
       <div className="container flex flex-col items-center text-center">
-        <h1 className="text-pretty text-2xl font-bold lg:text-5xl">
+        <h1 className="text-pretty text-2xl font-bold lg:text-5xl dark:text-white">
           {heading}
         </h1>
       </div>
@@ -96,7 +96,7 @@ const TechStack = ({
                     <img
                       src={logo.image}
                       alt={logo.description}
-                      className={logo.className}
+                      className={`${logo.className} dark:invert dark:brightness-0 dark:contrast-100`}
                     />
                   </div>
                 </CarouselItem>

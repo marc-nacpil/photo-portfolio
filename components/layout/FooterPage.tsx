@@ -80,7 +80,7 @@ const FooterPage = ({
 }: Footer2Props) => {
   return (
     <section
-      className="py-10 w-full bg-zinc-100 dark:bg-zinc-900 px-16"
+      className="py-10 w-full bg-zinc-100 dark:bg-zinc-900 px-16 dark:text-white"
       id="footer"
     >
       <div className="">
